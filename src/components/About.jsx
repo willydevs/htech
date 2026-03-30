@@ -59,7 +59,7 @@ export default function About() {
             {/* Second image thumb */}
             <div className="absolute -top-5 -right-5 w-32 h-32 rounded-xl overflow-hidden shadow-lg border-4 border-white hidden lg:block">
               <img
-                src="/images/imgi_74_MIUS-916-scaled-3-1536x1024.jpg"
+                src="/images/mgi_74_MIUS-916-scaled-3-1536x1024.jpg"
                 alt="Equipamento médico em manutenção"
                 className="w-full h-full object-cover"
               />

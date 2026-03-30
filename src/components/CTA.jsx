@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2" />
       </div>
-      <div className="absolute inset-0 bg-[url('/images/imgi_74_MIUS-916-scaled-3-1536x1024.jpg')] bg-cover bg-center opacity-[0.06]" />
+      <div className="absolute inset-0 bg-[url('/images/mgi_74_MIUS-916-scaled-3-1536x1024.jpg')] bg-cover bg-center opacity-[0.06]" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span className="inline-block bg-white/20 text-white text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full mb-5">
