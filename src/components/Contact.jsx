@@ -42,14 +42,29 @@ export default function Contact() {
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
 
+  const subjectLabels = {
+    manutencao: 'Manutenção Corretiva',
+    preventiva:  'Manutenção Preventiva',
+    pacs:        'Sistemas PACS',
+    contrato:    'Contrato de Suporte',
+    orcamento:   'Orçamento',
+    outro:       'Outro',
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    setLoading(true)
-    // Simulate send
-    setTimeout(() => {
-      setLoading(false)
-      setSent(true)
-    }, 1200)
+    const assunto = subjectLabels[form.subject] || form.subject || 'Não informado'
+    const texto = `Olá! Vim pelo site da HTech Service e gostaria de atendimento.
+
+*Nome:* ${form.name}
+*E-mail:* ${form.email}
+*Telefone:* ${form.phone || 'Não informado'}
+*Assunto:* ${assunto}
+*Mensagem:* ${form.message}`
+
+    const url = `https://wa.me/557933030236?text=${encodeURIComponent(texto)}`
+    window.open(url, '_blank')
+    setSent(true)
   }
 
   return (
